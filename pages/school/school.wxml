@@ -1,0 +1,10 @@
+<!--pages/school/school.wxml-->
+<!-- <text>pages/school/school.wxml</text> -->
+<view style="width:750rpx; height:750rpx; display:flex;  flex-direction: column; justify-content: center;">
+    <view bind:tap="onClick" style="padding:7px;">
+         <van-button round type="primary" size="large" >选择学校</van-button>
+    </view>
+    <van-popup show="{{flag}}" bind:close="onClose" position="top" custom-style="width:750rpx;">
+        <van-picker show-toolbar title="学校" columns="{{ columns }}" bind:change="onChange" bind:cancel="onCancel" bind:confirm="onConfirm" />            
+    </van-popup>
+</view>

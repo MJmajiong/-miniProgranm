@@ -1,0 +1,63 @@
+/**index.wxss**/
+.wrapper{
+  background: #f2f3f5;
+}
+
+.title-wrapper{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  /* border-bottom:1px solid greenyellow; */
+  position: fixed;
+  background: rgba(255, 255, 255, 1);
+}
+
+.month{
+  font-size: 12px;
+  width: 64rpx;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding:8px 0;
+}
+
+.title{
+  width:98rpx;
+  font-size: 12px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  
+}
+
+.wrapper>view:nth-child(2){
+  padding-top:33px;
+}
+.content-wrapper{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.classNum{
+  font-size: 12px;
+  width:64rpx;
+  height: 256rpx;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  /* background: rgba(255, 255, 255, 1); */
+}
+
+.text{
+  font-size:12px;
+  width:98rpx;
+  height: 256rpx;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}

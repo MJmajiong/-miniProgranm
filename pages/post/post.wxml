@@ -1,0 +1,29 @@
+<!-- pages/detail/detail.wxml -->
+<view class="wrapper">
+    <view class="className-wrapper" style="margin-top:10rpx;">
+        <van-field value="{{className}}" disabled="{{isDisabled}}" clearable="true" required label="课名" placeholder="请输入课名" bind:change="changeClassName" />
+    </view>
+    <view class="classRomm-wrapper" style="margin-top:20px;">
+        <van-field value="{{classRoom}}" disabled="{{isDisabled}}" clearable="true"  required label="教室" bind:change="changeClassRoom" placeholder="请输入教室" />
+    </view>
+    <view class="classRomm-wrapper">
+        <van-field value="{{weekNum}}" disabled="{{isDisabled}}" clearable="true" required label="周数" bind:change="changeWeekNum" placeholder="请输入周数,格式:1,3-10,13-18" />
+    </view>
+    <view class="classRomm-wrapper">
+        <van-field value="{{teacher}}" disabled="{{isDisabled}}" clearable="true" required label="老师" bind:change="changeTeacher" placeholder="请输入老师姓名" />
+    </view>
+     <view class="classRomm-wrapper">
+        <van-field value="{{descrition}}" disabled="{{isDisabled}}" clearable="true"  label="备注" bind:change="changeDescrition" placeholder="请输入要备注的内容" />
+    </view>
+    <view class="button" style="margin-top:100px;" bind:tap="onSave" wx:if="{{isSaveShow}}">
+        <van-button round type="danger" size="large" style="margin-top:50px;">保存</van-button>
+    </view>
+
+    <view class="edit" style="margin-top:100px;" bind:tap="onEdit" wx:if="{{isEditShow}}">
+        <van-button round type="danger" size="large" style="margin-top:50px;">编辑</van-button>
+    </view>
+    <!-- <van-popup show="{{flag}}" position="top" bind:close="onClose" custom-style="width:750rpx;">
+        <van-picker columns="{{ weekColumns }}" show-toolbar bind:change="onChange"  bind:cancel="onCancel"
+      bind:confirm="onConfirm" title="起始-结束周" />
+    </van-popup> -->
+</view>

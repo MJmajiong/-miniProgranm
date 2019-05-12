@@ -1,0 +1,16 @@
+/* pages/login/login.wxss */
+.wrapper{
+    height: 1334rpx;
+    padding:40rpx 40rpx 40rpx 40rpx;
+    background: #f2f3f5;
+}
+
+.user-wrapper{
+    /* display: flex; */
+    margin-top: 200rpx;
+    margin-bottom: 100rpx;
+}
+
+.password-wrapper{
+    margin-bottom: 100rpx;
+}

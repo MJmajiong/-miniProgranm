@@ -1,0 +1,28 @@
+<!--pages/login/login.wxml-->
+<!-- <text>pages/login/login.wxml</text> -->
+
+<view class="wrapper">
+  <view class="user-wrapper">
+    <van-field
+    value="{{ user }}"
+    placeholder="请输入学号"
+    bind:change="userOnChange"
+    error-message="{{userErrorMessage}}"
+    />
+  </view>
+  
+  <view class="password-wrapper">
+    <van-field
+    value="{{ password }}"
+    bind:change="passwordOnChange"
+    placeholder="请输入密码"
+    type="password"
+    error-message="{{passwordErrorMessage}}"
+     />
+  </view>
+
+  <view class="login-wrapper" bind:tap="searchClick">
+    <van-button type="danger" size="large" >查询</van-button>
+  </view>
+   
+</view>

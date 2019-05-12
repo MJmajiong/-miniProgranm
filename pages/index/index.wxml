@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="wrapper">
+  <view class="title-wrapper">
+    <text class="month" bind:tap="chooseClick">{{month}}</text>
+    <text class="title">周一</text>
+    <text class="title">周二</text>
+    <text class="title">周三</text>
+    <text class="title">周四</text>
+    <text class="title">周五</text>
+    <text class="title">周六</text>
+    <text class="title">周日</text>
+  </view>
+  <view class="content-wrapper" wx:for="{{weekArray}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+    <text class="classNum" bind:tap="classNumClick">{{item.classNum}}</text>
+    <text class="text" bind:tap="mondayClick" data-index="{{index}}" data-day="Monday">{{item.Monday.className}}</text>
+    <text class="text" bind:tap="mondayClick" data-index="{{index}}" data-day="Tuesday">{{item.Tuesday.className}}</text>
+    <text class="text" bind:tap="mondayClick" data-index="{{index}}" data-day="Wednesday">{{item.Wednesday.className}}</text>
+    <text class="text" bind:tap="mondayClick" data-index="{{index}}" data-day="Thursday">{{item.Thursday.className}}</text>
+    <text class="text" bind:tap="mondayClick" data-index="{{index}}" data-day="Friday">{{item.Friday.className}}</text>
+    <text class="text" bind:tap="mondayClick" data-index="{{index}}" data-day="Saturday">{{item.Saturday.className}}</text>
+    <text class="text" bind:tap="mondayClick" data-index="{{index}}" data-day="Sunday">{{item.Sunday.className}}</text>
+  </view>
+
+  <van-popup show="{{flag}}" bind:close="onClose"   position="top" custom-style="width:750rpx;">
+    <van-picker
+      show-toolbar
+      title="周数"
+      columns="{{ columns }}"
+      bind:cancel="onCancel"
+      bind:confirm="onConfirm"
+    />
+  </van-popup>
+
+ 
+</view>

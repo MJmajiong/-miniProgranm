@@ -1,0 +1,11 @@
+/* pages/detail/detail.wxss */
+.wrapper{
+    background: #f2f3f5;
+    width:750rpx;
+    height: 1334rpx;
+}
+
+.className-wrapper{
+    display: fixed;
+    top:10rpx;
+}
